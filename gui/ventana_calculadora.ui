@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>326</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculadora Alfredo</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #1a0f0f; /* fondo oscuro rojizo */
+    color: #f5d27a; /* texto dorado suave */
+    font-family: &quot;Segoe UI&quot;, Arial;
+    font-size: 10pt;
+}
+
+/* Etiquetas */
+QLabel {
+    color: #e6c068; /* dorado */
+    font-weight: bold;
+}
+/* Etiquetas */
+QLabel#label_Resultado {
+    color: #e6c068; /* dorado */
+	font-size:48pt;
+	font-family: &quot;Segoe UI&quot;, Romanl; 
+    font-weight: bold;
+}
+/* Campos de texto */
+QLineEdit {
+    background-color: #2b1a1a;
+    border: 2px solid #7a1f1f;
+    border-radius: 6px;
+    padding: 5px;
+    color: #f5d27a;
+    selection-background-color: #a83232;
+}
+
+/* Hover y focus */
+QLineEdit:focus {
+    border: 2px solid #d4af37; /* dorado brillante */
+    background-color: #331f1f;
+}
+
+/* Botones */
+QPushButton {
+    background-color: #7a1f1f;
+    color: #f5d27a;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+/* Hover botón */
+QPushButton:hover {
+    background-color: #a83232;
+    border: 2px solid #ffd700;
+}
+
+/* Botón presionado */
+QPushButton:pressed {
+    background-color: #5c1414;
+    border: 2px solid #c9a227;
+}
+
+/* Placeholder */
+QLineEdit::placeholder {
+    color: #bfa76a;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Numero 1:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="adit_numero1"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Numero 2:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="edit_numero2"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="boton_sumar">
+         <property name="text">
+          <string>sumar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Resultado">
+         <property name="font">
+          <font>
+           <family>Segoe UI,Romanl</family>
+           <pointsize>48</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
