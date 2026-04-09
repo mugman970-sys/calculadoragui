@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App Ejercicios</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Ventana principal */
+QMainWindow {
+    background-color: #0B0B0C; /* Negro ultra profundo */
+    color: #E8D9B5; /* Dorado elegante */
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* Barra de menú */
+QMenuBar {
+    background-color: #111112;
+    color: #E8D9B5;
+    border-bottom: 1px solid #6E0F1A; /* Rojo vino oscuro */
+    spacing: 12px;
+}
+
+/* Items del menú principal */
+QMenuBar::item {
+    background: transparent;
+    padding: 8px 16px;
+    margin: 2px;
+}
+
+/* Hover elegante */
+QMenuBar::item:selected {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #6E0F1A,
+        stop:1 #A61B2B
+    ); /* Rojo vino degradado */
+    color: #FFD700; /* Dorado intenso */
+    border-radius: 6px;
+}
+
+/* Click */
+QMenuBar::item:pressed {
+    background-color: #3A0A0F;
+}
+
+/* Menús desplegables */
+QMenu {
+    background-color: #121214;
+    color: #E8D9B5;
+    border: 1px solid #6E0F1A;
+    padding: 8px;
+}
+
+/* Items dentro del menú */
+QMenu::item {
+    padding: 8px 24px;
+    border-radius: 4px;
+}
+
+/* Hover en items */
+QMenu::item:selected {
+    background-color: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #7A1520,
+        stop:1 #CFAF5A
+    ); /* mezcla rojo + dorado */
+    color: #0B0B0C; /* texto oscuro para contraste premium */
+}
+
+/* Items deshabilitados */
+QMenu::item:disabled {
+    color: #4A4A4A;
+}
+
+/* Separadores elegantes */
+QMenu::separator {
+    height: 1px;
+    margin: 6px 14px;
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 transparent,
+        stop:0.5 #CFAF5A,
+        stop:1 transparent
+    ); /* línea dorada difuminada */
+}
+
+/* Efecto sutil de selección tipo brillo */
+QMenu::item:selected:active {
+    border: 1px solid #CFAF5A;
+}
+
+/* Tooltip (detalle premium extra) */
+QToolTip {
+    background-color: #1A1A1D;
+    color: #E8D9B5;
+    border: 1px solid #CFAF5A;
+    padding: 4px 8px;
+    border-radius: 4px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEjercicios">
+    <property name="title">
+     <string>Ejercicios</string>
+    </property>
+    <addaction name="actionCalculadora"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuEjercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCalculadora">
+   <property name="text">
+    <string>Calculadora</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
